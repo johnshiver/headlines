@@ -19,12 +19,12 @@ CREATE TABLE headlines(
       data_source_id INTEGER NOT NULL,
 
       title VARCHAR (255) NOT NULL,
-      description VARCHAR (512) NOT NULL,
+      description VARCHAR NOT NULL,
       link VARCHAR (512) NOT NULL,
       html_link VARCHAR (512) NOT NULL,
       author VARCHAR (255) NOT NULL,
 
-      published_at TIMESTAMPTZ NOT NULL,
+      published_at TIMESTAMPTZ,
 
       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
       updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
